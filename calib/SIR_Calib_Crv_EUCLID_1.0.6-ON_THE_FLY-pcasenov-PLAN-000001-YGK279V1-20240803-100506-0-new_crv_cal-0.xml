@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dpd-sir-crvmodel:DpdSirCrvModel xmlns:dpd-sir-crvmodel="http://ecdm.euclid-ec.org/schema/dpd/sir/crvmodel" xmlns:sys="http://ecdm.euclid-ec.org/schema/sys" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pro-sir="http://ecdm.euclid-ec.org/schema/pro/sir" xmlns:ins="http://ecdm.euclid-ec.org/schema/ins" xmlns:bas-dtd="http://ecdm.euclid-ec.org/schema/bas/dtd" xmlns:bas-ppr="http://ecdm.euclid-ec.org/schema/bas/ppr" xmlns:sys-dss="http://ecdm.euclid-ec.org/schema/sys/dss" xmlns:bas-dqc="http://ecdm.euclid-ec.org/schema/bas/dqc">
+ <Header>
+  <ProductId>SIR_Calib_Crv_EUCLID_1.0.6-ON_THE_FLY-pcasenov-PLAN-000001-YGK279V1-20240803-100506-0-new_crv_cal-0</ProductId>
+  <ProductType>DpdSirCrvModel</ProductType>
+  <SoftwareName>SIR_Calibration_Crv</SoftwareName>
+  <SoftwareRelease>4.6.2</SoftwareRelease>
+  <ProdSDC>SDC-IT-OPS</ProdSDC>
+  <DataSetRelease>CALBLOCK_PV-001-Visit1_R5</DataSetRelease>
+  <Purpose>ON_THE_FLY</Purpose>
+  <PlanId>SIR_Calib_Crv_EUCLID_1.0.6-ON_THE_FLY-pcasenov-PLAN-000001</PlanId>
+  <PPOId>SIR_Calib_Crv_EUCLID_1.0.6-ON_THE_FLY-pcasenov-PLAN-000001-YGK279V1-20240803-100506-0</PPOId>
+  <PipelineDefinitionId>SIR_Calib_Crv_EUCLID_1.0.6</PipelineDefinitionId>
+  <PpoStatus>COMPLETED</PpoStatus>
+  <ManualValidationStatus>VALID</ManualValidationStatus>
+  <AutomatedValidationStatus>UNKNOWN</AutomatedValidationStatus>
+  <ExpirationDate>1970-01-01T00:00:00.001000Z</ExpirationDate>
+  <ToBePublished>0</ToBePublished>
+  <Published>0</Published>
+  <Curator>SIR_PF</Curator>
+  <CreationDate>2024-08-03T10:41:39.581000Z</CreationDate>
+ </Header>
+ <Data>
+  <ValidityRange>
+   <TimestampStart>2023-07-01T00:00:00.000000Z</TimestampStart>
+   <TimestampEnd>2030-12-31T23:59:59.000000Z</TimestampEnd>
+  </ValidityRange>
+  <CalibrationID>2024-08-03T10:41:39.581</CalibrationID>
+  <RGS000>
+   <Date>2024-08-03T08:40:30.545980Z</Date>
+   <GWATilt>0</GWATilt>
+   <ExtraTilt>0.0</ExtraTilt>
+   <SpectralOrder>
+    <Order>0</Order>
+    <LocalModelDeg>1</LocalModelDeg>
+    <LocalRanges>-0.08960508905397674 0.17921017810795348</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.001641356644328563 0.008289201527002635 0.000946254962440479 0.0009730998719444596 -0.012209356824544156 -0.002459652580557683 0.0008028556572425998 -0.001079975389562457 0.0010423392163294357</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.0010918558794546993 0.0034992093904598312 -0.00025649240744989884 0.001861578409200563 0.00376367589863454 0.0008849912322129973 -0.0013509488407044139 0.004336615560917477 -0.0007595303842357099</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+   <SpectralOrder>
+    <Order>2</Order>
+    <LocalModelDeg>1</LocalModelDeg>
+    <LocalRanges>-10.0 11.54</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-82.345508115 82.34550811499999</DoubleRow1>
+     <DoubleRow2>-77.8927540575 77.8927540575</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+   <SpectralOrder>
+    <Order>1</Order>
+    <LocalModelDeg>3</LocalModelDeg>
+    <LocalRanges>-3.9426239183749767 5.017884987022698</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.0017373642425828665 0.00020488115207605354 -0.0003163643060132433 -0.0005258347067005712 0.00421546522353721 -0.00013415778683393423 -0.0003085850676301316 -0.00013906869619873503 -0.00020423839596272849</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.011322585347202888 0.003812146938784396 0.00028584670101059893 -0.0037959473221506643 0.03903334053115782 0.0008185115585287728 -0.00025965621815556103 0.00037399245415164833 0.00025007558078527403</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>2</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>3.1642716131710315e-05 -0.00036680477105987413 -6.25352001539746e-06 -0.0001189608155463432 9.192824954668713e-05 -1.8550504633962605e-05 -5.389303481601078e-06 2.2461210044210083e-05 0.0001254305856659192</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>3</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>5.1925983443169275e-05 -8.623558867865217e-05 5.8853045941851066e-05 -3.3035717744412025e-05 1.3973984930979349e-05 3.036482137851058e-05 8.36057723269791e-06 -8.62644706811253e-05 -1.558386130389138e-05</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+  </RGS000>
+  <RGS000>
+   <Date>2024-08-03T08:40:31.708954Z</Date>
+   <GWATilt>-4</GWATilt>
+   <ExtraTilt>0.0</ExtraTilt>
+   <SpectralOrder>
+    <Order>0</Order>
+    <LocalModelDeg>1</LocalModelDeg>
+    <LocalRanges>-0.08960508905397674 0.17921017810795348</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.006145434118821954 0.006283692059361613 0.0008387011033462596 0.0008034663901629049 -0.01173138261141563 -0.0014185992886762968 0.001112095115680503 -0.0014153432714001921 0.0009578689582289971</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.009037518373533341 0.0021696928893400113 -0.00028440733391427696 0.0026814580818632586 0.005855186825641436 0.000989653549144464 -0.001779235585306081 0.003889124707607887 -0.0006442114982604572</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+   <SpectralOrder>
+    <Order>1</Order>
+    <LocalModelDeg>3</LocalModelDeg>
+    <LocalRanges>-3.9426239183749767 5.017884987022698</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.038349031260336834 0.0005370703532049065 -0.0002025693374177525 -0.0009191330303467684 0.0045324901121561265 0.00015830933215322764 0.00022146316539452664 0.00019889175509053375 -0.00020897753402626624</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.324849315803454 0.005384257182408611 -0.0008762179971014208 -0.0033340274580255756 0.039318942220016806 0.0006695867860259186 0.0014608327257204737 -6.160232149040983e-05 0.0007313044516591514</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>2</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.00012014389334966439 -0.0004076438932334571 1.1466048979438921e-05 -8.15654375075103e-05 -4.149765079129425e-05 5.039692180346613e-05 4.0917373967735313e-05 0.00014817597660269022 -1.3280396360474246e-05</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>3</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.00031663894250710996 -2.4568984186017303e-05 7.862500559988374e-06 6.802243423220772e-06 0.00015491146772619746 -1.1134358099361664e-05 -7.012562436277249e-05 -8.242624031916982e-05 -2.9188714344557284e-05</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+  </RGS000>
+  <RGS180>
+   <Date>2024-08-03T08:40:31.179033Z</Date>
+   <GWATilt>0</GWATilt>
+   <ExtraTilt>0.0</ExtraTilt>
+   <SpectralOrder>
+    <Order>0</Order>
+    <LocalModelDeg>1</LocalModelDeg>
+    <LocalRanges>-0.08960508905397674 0.17921017810795348</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>4.430598150335852e-05 -0.008018212550403596 -0.0004051998493154739 0.0005896080787512824 -0.010355776884939683 -0.0010089514342315209 -6.830855536478955e-05 -2.6891436788238015e-05 -0.0004499539995593593</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.00016176571421429862 -0.0036050655977355466 0.00028531599928963673 0.0013870915508017404 0.00474123773117022 0.0004903539656390222 0.0013626826958038469 -0.004078595616430382 0.0004419847251177026</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+   <SpectralOrder>
+    <Order>1</Order>
+    <LocalModelDeg>3</LocalModelDeg>
+    <LocalRanges>-3.9426239183749767 5.017884987022698</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.0016686416727113083 -0.0002123172799057538 0.00014703455577816298 -0.0004911543800592405 0.0046241119165437525 -0.0001624396012200687 9.778526666109486e-05 -1.9465225807518155e-06 0.00019706004252794537</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.016324301753213095 -0.003580914009131054 1.0693291525371462e-05 -0.003758498637260115 0.03930069028851847 -4.1061541107533555e-05 0.00020810316117597557 0.00015451740089934384 0.00023457963435705916</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>2</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.0004372206229306134 0.0003513436481049097 3.067934977345151e-05 -8.421565457967451e-07 0.0001897461925279371 1.90434558296713e-05 7.031343647887373e-05 3.7773374964751345e-05 1.4767888751880703e-06</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>3</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>8.406524433896187e-05 0.00015880230703371544 -6.91086925013817e-06 5.936543771101156e-05 0.00012269110612938736 8.976379869883671e-05 7.1882459587396e-05 0.00010537536302849522 -2.474402217528054e-05</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+  </RGS180>
+  <RGS180>
+   <Date>2024-08-03T08:40:32.489145Z</Date>
+   <GWATilt>4</GWATilt>
+   <ExtraTilt>0.0</ExtraTilt>
+   <SpectralOrder>
+    <Order>0</Order>
+    <LocalModelDeg>1</LocalModelDeg>
+    <LocalRanges>-0.08960508905397674 0.17921017810795348</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.0074386800575253105 -0.006045195326145858 -0.0007998243967646938 0.0019508576452130161 -0.008880768909370666 -0.0015057239745462495 -0.0002487847741765625 7.796167361965984e-05 -0.0009035516234889344</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.007837165533177658 -0.0015761055277000102 0.00024267799726751958 0.001872710579904369 0.00658569310619549 0.0006894563989542839 0.0016407589725062441 -0.0026433505556855844 0.0004824952606878079</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+   <SpectralOrder>
+    <Order>1</Order>
+    <LocalModelDeg>3</LocalModelDeg>
+    <LocalRanges>-3.9426239183749767 5.017884987022698</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.036794905385426485 -0.0003631076722536598 0.00030884338057044755 -0.00034975006715926813 0.00445826895298404 9.722940053573712e-05 -0.00022704158113690545 0.00028334457050316244 9.062644333065784e-05</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.29834051669172795 -0.006267103862502281 0.0008933039989195181 -0.003452426312211809 0.03926765832168754 0.00015335748828915956 -0.0017900146040651745 0.0008604431679162577 -0.00016866238207487963</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>2</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.00020966837069632253 0.00037233359615401664 -1.3924464908318995e-05 2.6893518435722288e-05 8.317703644871832e-05 2.6980017143080957e-05 4.061609905142564e-05 -7.315976301399412e-05 2.9343031237665927e-05</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>3</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.00018368329030655383 9.424951412085232e-05 1.7699453997810826e-05 8.621823865883656e-05 0.00021005334947897154 2.6303774040963024e-05 9.814180443803106e-05 3.2832681292659136e-05 1.2721732127722861e-05</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+  </RGS180>
+  <BGS000>
+   <Date>2024-08-03T08:41:15.351255Z</Date>
+   <GWATilt>0</GWATilt>
+   <ExtraTilt>0.0</ExtraTilt>
+   <SpectralOrder>
+    <Order>0</Order>
+    <LocalModelDeg>1</LocalModelDeg>
+    <LocalRanges>-0.1075261068647721 0.0358420356215907</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.0012193340792019918 -0.0042207154815702705 -0.00029081490513690843 0.001653773112094049 -0.007573291169407473 0.00029694086834927854 0.0017805897025063645 0.001575974427171711 -3.375220249089835e-05</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.0005833025911429976 0.0040910572857362935 2.151342885706744e-05 -0.0003825587899190435 0.00786995911630126 -7.480654830614815e-05 -0.001027719243783705 -0.0014096816670316741 -0.0003885416202725564</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+   <SpectralOrder>
+    <Order>2</Order>
+    <LocalModelDeg>1</LocalModelDeg>
+    <LocalRanges>-10.0 11.54</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-82.345508115 82.34550811499999</DoubleRow1>
+     <DoubleRow2>-77.8927540575 77.8927540575</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+   <SpectralOrder>
+    <Order>1</Order>
+    <LocalModelDeg>3</LocalModelDeg>
+    <LocalRanges>-5.017884987022698 1.0752610686477209</LocalRanges>
+    <GlobalRanges>
+     <DoubleRow1>-81.87225343432638 82.11880453610762</DoubleRow1>
+     <DoubleRow2>-77.83326028992539 77.59738605808113</DoubleRow2>
+    </GlobalRanges>
+    <Model>
+     <Degree>0</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.008273871791328428 0.00011159772570337357 -0.00018650883207406755 0.0016991439116589195 -0.01675371714190646 -0.00047139005593811295 -3.4132631409039966e-05 -3.0320467027811953e-05 -8.067111845564842e-05</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>1</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>-0.012893405368098555 -0.0005014947854187041 0.0002643423909300237 -0.002819378760192943 0.02701815775189135 4.401734823371848e-05 3.169526786428288e-05 0.00029039552923251 0.0002951074134035238</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>2</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>9.556414386289984e-06 -6.899611508012928e-05 3.703186729755084e-05 -7.215647759467733e-05 0.00018713715366607068 7.783066184818554e-06 7.565618575521039e-06 -5.758071029781977e-06 3.970513193188685e-05</Data>
+     </Matrix>
+    </Model>
+    <Model>
+     <Degree>3</Degree>
+     <Matrix>
+      <Shape>3 3</Shape>
+      <Data>0.00011161489128266748 -0.00014158392822311998 -2.9825566338934144e-05 -3.577384087398334e-05 9.987023091551538e-06 3.3213949288025833e-05 -4.976905233899003e-05 -5.956215369867266e-06 -1.871088904666716e-05</Data>
+     </Matrix>
+    </Model>
+   </SpectralOrder>
+  </BGS000>
+ </Data>
+ <Parameters>
+  <Parameter>
+   <Key>BGS000_0_DeltaLocal</Key>
+   <Description>BGS000_0: Differences between expected and local model positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="67f3acf0d61b08713e0f46c4aab0963b">
+    <FileName>EUC_SIR_CRV_FITTED_BGS000_0_20240803T103522.921403Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_DeltaMeas</Key>
+   <Description>BGS000_0: Differences between measured and expected positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="db22bc82afeede7914368141448f60ff">
+    <FileName>EUC_SIR_CRV_MEASURES_BGS000_0_20240803T103522.871546Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_N_objects</Key>
+   <Description>BGS000_0: number of objects used in global FIT</Description>
+   <IntValue>6750</IntValue>
+   <Unit>Counts</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Nclipped_-130.0_03</Key>
+   <Description>BGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -130.0 pixels away from reference position</Description>
+   <IntValue>489</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Nclipped_-170.0_02</Key>
+   <Description>BGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -170.0 pixels away from reference position</Description>
+   <IntValue>495</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Nclipped_-230.0_01</Key>
+   <Description>BGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -230.0 pixels away from reference position</Description>
+   <IntValue>485</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Nclipped_-270.0_00</Key>
+   <Description>BGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -270.0 pixels away from reference position</Description>
+   <IntValue>476</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Nclipped_-50.0_05</Key>
+   <Description>BGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -50.0 pixels away from reference position</Description>
+   <IntValue>430</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Nclipped_-90.0_04</Key>
+   <Description>BGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -90.0 pixels away from reference position</Description>
+   <IntValue>456</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Nclipped_10.0_06</Key>
+   <Description>BGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 10.0 pixels away from reference position</Description>
+   <IntValue>404</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Nclipped_50.0_07</Key>
+   <Description>BGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 50.0 pixels away from reference position</Description>
+   <IntValue>379</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Order1_Chi2_0</Key>
+   <Description>BGS000_0: Chi2 for order1 on the poly order 0</Description>
+   <DoubleValue>1.8766984939176913e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Order1_Chi2_1</Key>
+   <Description>BGS000_0: Chi2 for order1 on the poly order 1</Description>
+   <DoubleValue>1.6509828821406124e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Order1_Chi2_2</Key>
+   <Description>BGS000_0: Chi2 for order1 on the poly order 2</Description>
+   <DoubleValue>4.988211500003193e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_Order1_Chi2_3</Key>
+   <Description>BGS000_0: Chi2 for order1 on the poly order 3</Description>
+   <DoubleValue>4.3311344336670416e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_binedges_-130.0_03</Key>
+   <Description>BGS000_0: histogram bin edges of differences between expected and measuredposition around -130.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_binedges_-170.0_02</Key>
+   <Description>BGS000_0: histogram bin edges of differences between expected and measuredposition around -170.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_binedges_-230.0_01</Key>
+   <Description>BGS000_0: histogram bin edges of differences between expected and measuredposition around -230.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_binedges_-270.0_00</Key>
+   <Description>BGS000_0: histogram bin edges of differences between expected and measuredposition around -270.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_binedges_-50.0_05</Key>
+   <Description>BGS000_0: histogram bin edges of differences between expected and measuredposition around -50.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_binedges_-90.0_04</Key>
+   <Description>BGS000_0: histogram bin edges of differences between expected and measuredposition around -90.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_binedges_10.0_06</Key>
+   <Description>BGS000_0: histogram bin edges of differences between expected and measuredposition around 10.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_binedges_50.0_07</Key>
+   <Description>BGS000_0: histogram bin edges of differences between expected and measuredposition around 50.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_hist_-130.0_03</Key>
+   <Description>BGS000_0: histogram of the differences between expected and measured position around-130.0 pixels away from reference position</Description>
+   <StringValue>[ 0 10 25 24 28 41 67 165 476 1023 1565 1379 841 428 192 99 58 33 27 27 17 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_hist_-170.0_02</Key>
+   <Description>BGS000_0: histogram of the differences between expected and measured position around-170.0 pixels away from reference position</Description>
+   <StringValue>[ 0 14 16 23 31 45 60 157 470 1050 1552 1360 869 423 189 100 51 37 31 34 19 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_hist_-230.0_01</Key>
+   <Description>BGS000_0: histogram of the differences between expected and measured position around-230.0 pixels away from reference position</Description>
+   <StringValue>[ 0 11 10 26 33 41 56 165 530 1039 1575 1378 786 435 193 88 60 42 20 31 23 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_hist_-270.0_00</Key>
+   <Description>BGS000_0: histogram of the differences between expected and measured position around-270.0 pixels away from reference position</Description>
+   <StringValue>[ 0 15 12 18 24 32 69 164 508 1097 1527 1391 806 425 183 95 58 34 26 26 23 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_hist_-50.0_05</Key>
+   <Description>BGS000_0: histogram of the differences between expected and measured position around-50.0 pixels away from reference position</Description>
+   <StringValue>[ 0 14 19 18 24 38 67 177 488 1044 1544 1306 870 469 215 105 58 30 16 18 12 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_hist_-90.0_04</Key>
+   <Description>BGS000_0: histogram of the differences between expected and measured position around-90.0 pixels away from reference position</Description>
+   <StringValue>[ 0 17 22 17 29 35 55 181 502 1060 1516 1387 809 427 204 125 49 31 30 21 14 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_hist_10.0_06</Key>
+   <Description>BGS000_0: histogram of the differences between expected and measured position around10.0 pixels away from reference position</Description>
+   <StringValue>[ 0 12 17 13 38 49 70 188 461 1001 1449 1338 884 519 241 125 64 34 20 19 11 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_hist_50.0_07</Key>
+   <Description>BGS000_0: histogram of the differences between expected and measured position around50.0 pixels away from reference position</Description>
+   <StringValue>[ 0 20 10 20 36 49 89 218 469 999 1442 1315 878 516 252 121 50 29 23 21 6 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_mean_-130.0_03</Key>
+   <Description>BGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -130.0 pixels away from reference position</Description>
+   <DoubleValue>-0.003683736314997077</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_mean_-170.0_02</Key>
+   <Description>BGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -170.0 pixels away from reference position</Description>
+   <DoubleValue>-0.003167446469888091</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_mean_-230.0_01</Key>
+   <Description>BGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -230.0 pixels away from reference position</Description>
+   <DoubleValue>-0.009353755973279476</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_mean_-270.0_00</Key>
+   <Description>BGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -270.0 pixels away from reference position</Description>
+   <DoubleValue>-0.009652734734117985</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_mean_-50.0_05</Key>
+   <Description>BGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -50.0 pixels away from reference position</Description>
+   <DoubleValue>-0.001966773299500346</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_mean_-90.0_04</Key>
+   <Description>BGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -90.0 pixels away from reference position</Description>
+   <DoubleValue>-0.0041150618344545364</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_mean_10.0_06</Key>
+   <Description>BGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around 10.0 pixels away from reference position</Description>
+   <DoubleValue>0.0057686627842485905</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_mean_50.0_07</Key>
+   <Description>BGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around 50.0 pixels away from reference position</Description>
+   <DoubleValue>0.0015062324237078428</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_std_-130.0_03</Key>
+   <Description>BGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -130.0 pixels away from reference position</Description>
+   <DoubleValue>0.17255766689777374</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_std_-170.0_02</Key>
+   <Description>BGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -170.0 pixels away from reference position</Description>
+   <DoubleValue>0.17161932587623596</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_std_-230.0_01</Key>
+   <Description>BGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -230.0 pixels away from reference position</Description>
+   <DoubleValue>0.17053906619548798</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_std_-270.0_00</Key>
+   <Description>BGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -270.0 pixels away from reference position</Description>
+   <DoubleValue>0.1699184626340866</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_std_-50.0_05</Key>
+   <Description>BGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -50.0 pixels away from reference position</Description>
+   <DoubleValue>0.17776545882225037</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_std_-90.0_04</Key>
+   <Description>BGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -90.0 pixels away from reference position</Description>
+   <DoubleValue>0.1756269931793213</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_std_10.0_06</Key>
+   <Description>BGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around 10.0 pixels away from reference position</Description>
+   <DoubleValue>0.18520621955394745</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_0_std_50.0_07</Key>
+   <Description>BGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around 50.0 pixels away from reference position</Description>
+   <DoubleValue>0.18885937333106995</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_DeltaLocal</Key>
+   <Description>RGS000_-4: Differences between expected and local model positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="1058af1ae7269beb8a1dfdb839b3f4ed">
+    <FileName>EUC_SIR_CRV_FITTED_RGS000_-4_20240803T103503.784634Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_DeltaMeas</Key>
+   <Description>RGS000_-4: Differences between measured and expected positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="13cb32b16644916d8405ce8d42b7fe24">
+    <FileName>EUC_SIR_CRV_MEASURES_RGS000_-4_20240803T103503.717754Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_N_objects</Key>
+   <Description>RGS000_-4: number of objects used in global FIT</Description>
+   <IntValue>5505</IntValue>
+   <Unit>Counts</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Nclipped_-10.0_03</Key>
+   <Description>RGS000_-4: Number of clipped values (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <IntValue>301</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Nclipped_-150.0_01</Key>
+   <Description>RGS000_-4: Number of clipped values (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <IntValue>320</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Nclipped_-210.0_00</Key>
+   <Description>RGS000_-4: Number of clipped values (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <IntValue>325</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Nclipped_-70.0_02</Key>
+   <Description>RGS000_-4: Number of clipped values (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <IntValue>326</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Nclipped_130.0_05</Key>
+   <Description>RGS000_-4: Number of clipped values (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <IntValue>285</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Nclipped_210.0_06</Key>
+   <Description>RGS000_-4: Number of clipped values (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <IntValue>308</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Nclipped_270.0_07</Key>
+   <Description>RGS000_-4: Number of clipped values (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <IntValue>345</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Nclipped_70.0_04</Key>
+   <Description>RGS000_-4: Number of clipped values (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <IntValue>265</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Order1_Chi2_0</Key>
+   <Description>RGS000_-4: Chi2 for order1 on the poly order 0</Description>
+   <DoubleValue>2.3694770165122277e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Order1_Chi2_1</Key>
+   <Description>RGS000_-4: Chi2 for order1 on the poly order 1</Description>
+   <DoubleValue>4.389230537494145e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Order1_Chi2_2</Key>
+   <Description>RGS000_-4: Chi2 for order1 on the poly order 2</Description>
+   <DoubleValue>3.285378068452413e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_Order1_Chi2_3</Key>
+   <Description>RGS000_-4: Chi2 for order1 on the poly order 3</Description>
+   <DoubleValue>2.5064671502206376e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_binedges_-10.0_03</Key>
+   <Description>RGS000_-4: histogram bin edges of differences between expected and measuredposition around -10.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_binedges_-150.0_01</Key>
+   <Description>RGS000_-4: histogram bin edges of differences between expected and measuredposition around -150.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_binedges_-210.0_00</Key>
+   <Description>RGS000_-4: histogram bin edges of differences between expected and measuredposition around -210.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_binedges_-70.0_02</Key>
+   <Description>RGS000_-4: histogram bin edges of differences between expected and measuredposition around -70.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_binedges_130.0_05</Key>
+   <Description>RGS000_-4: histogram bin edges of differences between expected and measuredposition around 130.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_binedges_210.0_06</Key>
+   <Description>RGS000_-4: histogram bin edges of differences between expected and measuredposition around 210.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_binedges_270.0_07</Key>
+   <Description>RGS000_-4: histogram bin edges of differences between expected and measuredposition around 270.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_binedges_70.0_04</Key>
+   <Description>RGS000_-4: histogram bin edges of differences between expected and measuredposition around 70.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_hist_-10.0_03</Key>
+   <Description>RGS000_-4: histogram of the differences between expected and measured position around-10.0 pixels away from reference position</Description>
+   <StringValue>[ 0 15 20 44 58 97 166 217 450 795 936 781 563 458 311 192 78 39 30 19 20 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_hist_-150.0_01</Key>
+   <Description>RGS000_-4: histogram of the differences between expected and measured position around-150.0 pixels away from reference position</Description>
+   <StringValue>[ 0 19 26 48 47 100 153 237 478 779 950 771 567 445 282 178 82 45 31 16 24 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_hist_-210.0_00</Key>
+   <Description>RGS000_-4: histogram of the differences between expected and measured position around-210.0 pixels away from reference position</Description>
+   <StringValue>[115 27 21 40 80 123 166 278 502 743 786 760 630 451 281 172 91 44 22 18 11 144]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_hist_-70.0_02</Key>
+   <Description>RGS000_-4: histogram of the differences between expected and measured position around-70.0 pixels away from reference position</Description>
+   <StringValue>[ 0 25 25 32 44 96 152 205 426 790 960 780 600 445 323 164 100 53 22 16 24 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_hist_130.0_05</Key>
+   <Description>RGS000_-4: histogram of the differences between expected and measured position around130.0 pixels away from reference position</Description>
+   <StringValue>[120 18 26 31 51 90 168 213 419 754 898 796 644 503 305 165 104 51 33 13 19 84]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_hist_210.0_06</Key>
+   <Description>RGS000_-4: histogram of the differences between expected and measured position around210.0 pixels away from reference position</Description>
+   <StringValue>[143 21 24 38 44 90 148 217 353 701 840 777 654 521 374 229 116 61 30 14 11 99]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_hist_270.0_07</Key>
+   <Description>RGS000_-4: histogram of the differences between expected and measured position around270.0 pixels away from reference position</Description>
+   <StringValue>[164 12 28 30 66 123 177 288 512 734 827 759 570 427 292 177 86 49 26 22 13 123]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_hist_70.0_04</Key>
+   <Description>RGS000_-4: histogram of the differences between expected and measured position around70.0 pixels away from reference position</Description>
+   <StringValue>[ 92 21 15 42 54 99 159 242 433 761 945 792 604 453 302 196 97 36 31 20 9 102]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_mean_-10.0_03</Key>
+   <Description>RGS000_-4: clipped mean (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <DoubleValue>-0.0069779930636286736</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_mean_-150.0_01</Key>
+   <Description>RGS000_-4: clipped mean (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <DoubleValue>-0.01013372652232647</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_mean_-210.0_00</Key>
+   <Description>RGS000_-4: clipped mean (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <DoubleValue>-0.01786900870501995</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_mean_-70.0_02</Key>
+   <Description>RGS000_-4: clipped mean (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <DoubleValue>0.0014463389525189996</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_mean_130.0_05</Key>
+   <Description>RGS000_-4: clipped mean (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <DoubleValue>0.006529720965772867</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_mean_210.0_06</Key>
+   <Description>RGS000_-4: clipped mean (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <DoubleValue>0.02923061139881611</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_mean_270.0_07</Key>
+   <Description>RGS000_-4: clipped mean (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <DoubleValue>-0.018882546573877335</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_mean_70.0_04</Key>
+   <Description>RGS000_-4: clipped mean (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <DoubleValue>-0.0026765933725982904</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_std_-10.0_03</Key>
+   <Description>RGS000_-4: clipped std (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <DoubleValue>0.26115068793296814</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_std_-150.0_01</Key>
+   <Description>RGS000_-4: clipped std (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <DoubleValue>0.2612834572792053</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_std_-210.0_00</Key>
+   <Description>RGS000_-4: clipped std (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <DoubleValue>0.2728484570980072</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_std_-70.0_02</Key>
+   <Description>RGS000_-4: clipped std (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <DoubleValue>0.25507164001464844</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_std_130.0_05</Key>
+   <Description>RGS000_-4: clipped std (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <DoubleValue>0.26138436794281006</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_std_210.0_06</Key>
+   <Description>RGS000_-4: clipped std (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <DoubleValue>0.26986512541770935</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_std_270.0_07</Key>
+   <Description>RGS000_-4: clipped std (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <DoubleValue>0.2732418179512024</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_-4_std_70.0_04</Key>
+   <Description>RGS000_-4: clipped std (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <DoubleValue>0.26146650314331055</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_DeltaLocal</Key>
+   <Description>RGS000_0: Differences between expected and local model positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="4a9685f9001a0ab6b76740a22c0039c7">
+    <FileName>EUC_SIR_CRV_FITTED_RGS000_0_20240803T103505.297067Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_DeltaMeas</Key>
+   <Description>RGS000_0: Differences between measured and expected positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="692f0c7e7bb38d1e59295b395a080ea1">
+    <FileName>EUC_SIR_CRV_MEASURES_RGS000_0_20240803T103505.230434Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_N_objects</Key>
+   <Description>RGS000_0: number of objects used in global FIT</Description>
+   <IntValue>5583</IntValue>
+   <Unit>Counts</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Nclipped_-10.0_03</Key>
+   <Description>RGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <IntValue>281</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Nclipped_-150.0_01</Key>
+   <Description>RGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <IntValue>286</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Nclipped_-210.0_00</Key>
+   <Description>RGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <IntValue>289</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Nclipped_-70.0_02</Key>
+   <Description>RGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <IntValue>280</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Nclipped_130.0_05</Key>
+   <Description>RGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <IntValue>262</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Nclipped_210.0_06</Key>
+   <Description>RGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <IntValue>270</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Nclipped_270.0_07</Key>
+   <Description>RGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <IntValue>286</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Nclipped_70.0_04</Key>
+   <Description>RGS000_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <IntValue>268</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Order1_Chi2_0</Key>
+   <Description>RGS000_0: Chi2 for order1 on the poly order 0</Description>
+   <DoubleValue>2.7259770123981795e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Order1_Chi2_1</Key>
+   <Description>RGS000_0: Chi2 for order1 on the poly order 1</Description>
+   <DoubleValue>3.627027473457469e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Order1_Chi2_2</Key>
+   <Description>RGS000_0: Chi2 for order1 on the poly order 2</Description>
+   <DoubleValue>8.294822253839983e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_Order1_Chi2_3</Key>
+   <Description>RGS000_0: Chi2 for order1 on the poly order 3</Description>
+   <DoubleValue>6.974196666912864e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_binedges_-10.0_03</Key>
+   <Description>RGS000_0: histogram bin edges of differences between expected and measuredposition around -10.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_binedges_-150.0_01</Key>
+   <Description>RGS000_0: histogram bin edges of differences between expected and measuredposition around -150.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_binedges_-210.0_00</Key>
+   <Description>RGS000_0: histogram bin edges of differences between expected and measuredposition around -210.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_binedges_-70.0_02</Key>
+   <Description>RGS000_0: histogram bin edges of differences between expected and measuredposition around -70.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_binedges_130.0_05</Key>
+   <Description>RGS000_0: histogram bin edges of differences between expected and measuredposition around 130.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_binedges_210.0_06</Key>
+   <Description>RGS000_0: histogram bin edges of differences between expected and measuredposition around 210.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_binedges_270.0_07</Key>
+   <Description>RGS000_0: histogram bin edges of differences between expected and measuredposition around 270.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_binedges_70.0_04</Key>
+   <Description>RGS000_0: histogram bin edges of differences between expected and measuredposition around 70.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_hist_-10.0_03</Key>
+   <Description>RGS000_0: histogram of the differences between expected and measured position around-10.0 pixels away from reference position</Description>
+   <StringValue>[ 0 11 17 30 66 139 237 334 481 594 677 826 642 554 335 203 89 46 24 20 14 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_hist_-150.0_01</Key>
+   <Description>RGS000_0: histogram of the differences between expected and measured position around-150.0 pixels away from reference position</Description>
+   <StringValue>[ 0 15 14 29 51 122 231 381 443 591 725 761 705 574 317 189 93 53 25 12 22 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_hist_-210.0_00</Key>
+   <Description>RGS000_0: histogram of the differences between expected and measured position around-210.0 pixels away from reference position</Description>
+   <StringValue>[ 0 17 17 29 54 141 240 350 501 595 756 763 699 516 333 161 82 36 28 22 13 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_hist_-70.0_02</Key>
+   <Description>RGS000_0: histogram of the differences between expected and measured position around-70.0 pixels away from reference position</Description>
+   <StringValue>[ 0 9 18 41 60 124 248 337 473 587 682 790 696 554 347 157 111 45 30 15 17 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_hist_130.0_05</Key>
+   <Description>RGS000_0: histogram of the differences between expected and measured position around130.0 pixels away from reference position</Description>
+   <StringValue>[ 0 12 22 32 63 160 229 355 482 540 726 743 667 528 377 224 86 49 25 17 18 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_hist_210.0_06</Key>
+   <Description>RGS000_0: histogram of the differences between expected and measured position around210.0 pixels away from reference position</Description>
+   <StringValue>[ 0 12 20 38 76 157 211 355 430 583 702 708 681 518 387 237 115 59 24 19 10 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_hist_270.0_07</Key>
+   <Description>RGS000_0: histogram of the differences between expected and measured position around270.0 pixels away from reference position</Description>
+   <StringValue>[ 0 21 28 56 114 123 253 352 506 581 648 706 636 486 365 219 107 60 32 16 13 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_hist_70.0_04</Key>
+   <Description>RGS000_0: histogram of the differences between expected and measured position around70.0 pixels away from reference position</Description>
+   <StringValue>[ 0 11 18 34 58 134 257 357 466 584 685 780 670 533 365 213 91 46 29 11 18 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_mean_-10.0_03</Key>
+   <Description>RGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <DoubleValue>-0.003901981981471181</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_mean_-150.0_01</Key>
+   <Description>RGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <DoubleValue>-0.0019883739296346903</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_mean_-210.0_00</Key>
+   <Description>RGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <DoubleValue>-0.013226458802819252</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_mean_-70.0_02</Key>
+   <Description>RGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <DoubleValue>-0.005091503728181124</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_mean_130.0_05</Key>
+   <Description>RGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <DoubleValue>-0.003909359220415354</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_mean_210.0_06</Key>
+   <Description>RGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <DoubleValue>0.004177283030003309</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_mean_270.0_07</Key>
+   <Description>RGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <DoubleValue>-0.015277213416993618</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_mean_70.0_04</Key>
+   <Description>RGS000_0: clipped mean (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <DoubleValue>-0.004827604629099369</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_std_-10.0_03</Key>
+   <Description>RGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <DoubleValue>0.2842831015586853</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_std_-150.0_01</Key>
+   <Description>RGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <DoubleValue>0.27765360474586487</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_std_-210.0_00</Key>
+   <Description>RGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <DoubleValue>0.27582234144210815</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_std_-70.0_02</Key>
+   <Description>RGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <DoubleValue>0.2846049964427948</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_std_130.0_05</Key>
+   <Description>RGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <DoubleValue>0.2906632721424103</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_std_210.0_06</Key>
+   <Description>RGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <DoubleValue>0.2957538068294525</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_std_270.0_07</Key>
+   <Description>RGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <DoubleValue>0.3082195520401001</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_0_std_70.0_04</Key>
+   <Description>RGS000_0: clipped std (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <DoubleValue>0.28428396582603455</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_DeltaLocal</Key>
+   <Description>RGS180_0: Differences between expected and local model positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="7db19b2442881ea8bcee90b994307818">
+    <FileName>EUC_SIR_CRV_FITTED_RGS180_0_20240803T103505.547100Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_DeltaMeas</Key>
+   <Description>RGS180_0: Differences between measured and expected positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="95d41db3c23be1487f9e6aba2a8a2b2a">
+    <FileName>EUC_SIR_CRV_MEASURES_RGS180_0_20240803T103505.480189Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_N_objects</Key>
+   <Description>RGS180_0: number of objects used in global FIT</Description>
+   <IntValue>5613</IntValue>
+   <Unit>Counts</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Nclipped_-10.0_03</Key>
+   <Description>RGS180_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <IntValue>354</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Nclipped_-150.0_01</Key>
+   <Description>RGS180_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <IntValue>343</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Nclipped_-210.0_00</Key>
+   <Description>RGS180_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <IntValue>381</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Nclipped_-70.0_02</Key>
+   <Description>RGS180_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <IntValue>339</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Nclipped_130.0_05</Key>
+   <Description>RGS180_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <IntValue>368</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Nclipped_210.0_06</Key>
+   <Description>RGS180_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <IntValue>364</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Nclipped_270.0_07</Key>
+   <Description>RGS180_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <IntValue>348</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Nclipped_70.0_04</Key>
+   <Description>RGS180_0: Number of clipped values (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <IntValue>361</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Order1_Chi2_0</Key>
+   <Description>RGS180_0: Chi2 for order1 on the poly order 0</Description>
+   <DoubleValue>1.7821382505211286e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Order1_Chi2_1</Key>
+   <Description>RGS180_0: Chi2 for order1 on the poly order 1</Description>
+   <DoubleValue>3.7370951164539536e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Order1_Chi2_2</Key>
+   <Description>RGS180_0: Chi2 for order1 on the poly order 2</Description>
+   <DoubleValue>7.752584206880801e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_Order1_Chi2_3</Key>
+   <Description>RGS180_0: Chi2 for order1 on the poly order 3</Description>
+   <DoubleValue>6.622125101421725e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_binedges_-10.0_03</Key>
+   <Description>RGS180_0: histogram bin edges of differences between expected and measuredposition around -10.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_binedges_-150.0_01</Key>
+   <Description>RGS180_0: histogram bin edges of differences between expected and measuredposition around -150.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_binedges_-210.0_00</Key>
+   <Description>RGS180_0: histogram bin edges of differences between expected and measuredposition around -210.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_binedges_-70.0_02</Key>
+   <Description>RGS180_0: histogram bin edges of differences between expected and measuredposition around -70.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_binedges_130.0_05</Key>
+   <Description>RGS180_0: histogram bin edges of differences between expected and measuredposition around 130.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_binedges_210.0_06</Key>
+   <Description>RGS180_0: histogram bin edges of differences between expected and measuredposition around 210.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_binedges_270.0_07</Key>
+   <Description>RGS180_0: histogram bin edges of differences between expected and measuredposition around 270.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_binedges_70.0_04</Key>
+   <Description>RGS180_0: histogram bin edges of differences between expected and measuredposition around 70.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_hist_-10.0_03</Key>
+   <Description>RGS180_0: histogram of the differences between expected and measured position around-10.0 pixels away from reference position</Description>
+   <StringValue>[ 0 15 10 25 38 77 158 295 449 694 844 853 822 563 268 117 48 30 20 17 12 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_hist_-150.0_01</Key>
+   <Description>RGS180_0: histogram of the differences between expected and measured position around-150.0 pixels away from reference position</Description>
+   <StringValue>[ 0 15 25 27 42 108 176 319 489 679 783 904 752 526 271 115 55 26 23 18 8 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_hist_-210.0_00</Key>
+   <Description>RGS180_0: histogram of the differences between expected and measured position around-210.0 pixels away from reference position</Description>
+   <StringValue>[ 0 11 13 32 44 102 167 265 439 602 767 855 778 577 315 153 79 45 23 18 16 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_hist_-70.0_02</Key>
+   <Description>RGS180_0: histogram of the differences between expected and measured position around-70.0 pixels away from reference position</Description>
+   <StringValue>[ 0 20 20 22 37 80 179 295 483 660 803 878 844 533 271 112 53 36 24 21 12 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_hist_130.0_05</Key>
+   <Description>RGS180_0: histogram of the differences between expected and measured position around130.0 pixels away from reference position</Description>
+   <StringValue>[ 0 17 16 25 34 62 124 275 470 728 842 909 844 531 255 105 53 28 23 15 11 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_hist_210.0_06</Key>
+   <Description>RGS180_0: histogram of the differences between expected and measured position around210.0 pixels away from reference position</Description>
+   <StringValue>[ 0 11 20 32 39 52 102 264 489 717 874 995 814 490 262 106 45 27 20 19 12 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_hist_270.0_07</Key>
+   <Description>RGS180_0: histogram of the differences between expected and measured position around270.0 pixels away from reference position</Description>
+   <StringValue>[ 0 13 20 24 33 39 89 209 450 670 915 899 859 610 310 127 53 32 19 22 12 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_hist_70.0_04</Key>
+   <Description>RGS180_0: histogram of the differences between expected and measured position around70.0 pixels away from reference position</Description>
+   <StringValue>[ 0 10 25 20 33 63 137 257 491 682 868 917 840 525 260 120 44 32 23 14 14 0]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_mean_-10.0_03</Key>
+   <Description>RGS180_0: clipped mean (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <DoubleValue>0.00043866768828593194</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_mean_-150.0_01</Key>
+   <Description>RGS180_0: clipped mean (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <DoubleValue>-0.01071576401591301</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_mean_-210.0_00</Key>
+   <Description>RGS180_0: clipped mean (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <DoubleValue>0.012913769111037254</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_mean_-70.0_02</Key>
+   <Description>RGS180_0: clipped mean (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <DoubleValue>-0.001534642418846488</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_mean_130.0_05</Key>
+   <Description>RGS180_0: clipped mean (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <DoubleValue>0.003382563591003418</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_mean_210.0_06</Key>
+   <Description>RGS180_0: clipped mean (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <DoubleValue>0.0035413196310400963</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_mean_270.0_07</Key>
+   <Description>RGS180_0: clipped mean (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <DoubleValue>0.026117198169231415</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_mean_70.0_04</Key>
+   <Description>RGS180_0: clipped mean (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <DoubleValue>0.004681466147303581</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_std_-10.0_03</Key>
+   <Description>RGS180_0: clipped std (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <DoubleValue>0.23498359322547913</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_std_-150.0_01</Key>
+   <Description>RGS180_0: clipped std (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <DoubleValue>0.24607332050800323</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_std_-210.0_00</Key>
+   <Description>RGS180_0: clipped std (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <DoubleValue>0.2573584020137787</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_std_-70.0_02</Key>
+   <Description>RGS180_0: clipped std (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <DoubleValue>0.2391175627708435</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_std_130.0_05</Key>
+   <Description>RGS180_0: clipped std (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <DoubleValue>0.22443848848342896</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_std_210.0_06</Key>
+   <Description>RGS180_0: clipped std (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <DoubleValue>0.2175944745540619</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_std_270.0_07</Key>
+   <Description>RGS180_0: clipped std (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <DoubleValue>0.21656402945518494</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_0_std_70.0_04</Key>
+   <Description>RGS180_0: clipped std (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <DoubleValue>0.22442136704921722</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_DeltaLocal</Key>
+   <Description>RGS180_4: Differences between expected and local model positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="2961ce7dc1da7f3d9ff125a3c8d8ce57">
+    <FileName>EUC_SIR_CRV_FITTED_RGS180_4_20240803T103506.551377Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_DeltaMeas</Key>
+   <Description>RGS180_4: Differences between measured and expected positions</Description>
+   <Files filestatus="PROPOSED" checksumMethod="MD5" checksumValue="d506e3ced11d44c06e2cd999dd638cc6">
+    <FileName>EUC_SIR_CRV_MEASURES_RGS180_4_20240803T103506.486921Z.fits</FileName>
+   </Files>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_N_objects</Key>
+   <Description>RGS180_4: number of objects used in global FIT</Description>
+   <IntValue>5618</IntValue>
+   <Unit>Counts</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Nclipped_-10.0_03</Key>
+   <Description>RGS180_4: Number of clipped values (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <IntValue>243</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Nclipped_-150.0_01</Key>
+   <Description>RGS180_4: Number of clipped values (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <IntValue>249</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Nclipped_-210.0_00</Key>
+   <Description>RGS180_4: Number of clipped values (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <IntValue>343</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Nclipped_-70.0_02</Key>
+   <Description>RGS180_4: Number of clipped values (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <IntValue>234</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Nclipped_130.0_05</Key>
+   <Description>RGS180_4: Number of clipped values (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <IntValue>262</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Nclipped_210.0_06</Key>
+   <Description>RGS180_4: Number of clipped values (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <IntValue>258</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Nclipped_270.0_07</Key>
+   <Description>RGS180_4: Number of clipped values (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <IntValue>259</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Nclipped_70.0_04</Key>
+   <Description>RGS180_4: Number of clipped values (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <IntValue>238</IntValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Order1_Chi2_0</Key>
+   <Description>RGS180_4: Chi2 for order1 on the poly order 0</Description>
+   <DoubleValue>2.6672586032804472e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Order1_Chi2_1</Key>
+   <Description>RGS180_4: Chi2 for order1 on the poly order 1</Description>
+   <DoubleValue>3.350659737538295e-05</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Order1_Chi2_2</Key>
+   <Description>RGS180_4: Chi2 for order1 on the poly order 2</Description>
+   <DoubleValue>2.802206911053552e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_Order1_Chi2_3</Key>
+   <Description>RGS180_4: Chi2 for order1 on the poly order 3</Description>
+   <DoubleValue>2.5149929755530033e-07</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_binedges_-10.0_03</Key>
+   <Description>RGS180_4: histogram bin edges of differences between expected and measuredposition around -10.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_binedges_-150.0_01</Key>
+   <Description>RGS180_4: histogram bin edges of differences between expected and measuredposition around -150.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_binedges_-210.0_00</Key>
+   <Description>RGS180_4: histogram bin edges of differences between expected and measuredposition around -210.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_binedges_-70.0_02</Key>
+   <Description>RGS180_4: histogram bin edges of differences between expected and measuredposition around -70.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_binedges_130.0_05</Key>
+   <Description>RGS180_4: histogram bin edges of differences between expected and measuredposition around 130.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_binedges_210.0_06</Key>
+   <Description>RGS180_4: histogram bin edges of differences between expected and measuredposition around 210.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_binedges_270.0_07</Key>
+   <Description>RGS180_4: histogram bin edges of differences between expected and measuredposition around 270.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_binedges_70.0_04</Key>
+   <Description>RGS180_4: histogram bin edges of differences between expected and measuredposition around 70.0 pixels away from reference position</Description>
+   <StringValue>[-1.1 -1. -0.9 -0.8 -0.7 -0.6 -0.5 -0.4 -0.3 -0.2 -0.1 0. 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1. 1.1]</StringValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_hist_-10.0_03</Key>
+   <Description>RGS180_4: histogram of the differences between expected and measured position around-10.0 pixels away from reference position</Description>
+   <StringValue>[ 93 11 16 22 41 85 169 400 664 800 683 566 535 509 471 226 109 57 23 19 10 109]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_hist_-150.0_01</Key>
+   <Description>RGS180_4: histogram of the differences between expected and measured position around-150.0 pixels away from reference position</Description>
+   <StringValue>[ 89 15 20 30 48 92 209 433 636 720 680 528 511 493 431 269 154 66 26 24 18 126]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_hist_-210.0_00</Key>
+   <Description>RGS180_4: histogram of the differences between expected and measured position around-210.0 pixels away from reference position</Description>
+   <StringValue>[136 19 24 36 85 156 282 489 689 727 586 482 494 445 342 204 118 49 24 33 22 176]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_hist_-70.0_02</Key>
+   <Description>RGS180_4: histogram of the differences between expected and measured position around-70.0 pixels away from reference position</Description>
+   <StringValue>[ 91 15 13 27 52 83 192 425 659 798 648 567 475 570 429 244 114 54 28 19 15 100]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_hist_130.0_05</Key>
+   <Description>RGS180_4: histogram of the differences between expected and measured position around130.0 pixels away from reference position</Description>
+   <StringValue>[ 77 13 22 22 22 63 166 356 641 789 721 641 595 538 391 215 120 39 34 21 18 114]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_hist_210.0_06</Key>
+   <Description>RGS180_4: histogram of the differences between expected and measured position around210.0 pixels away from reference position</Description>
+   <StringValue>[ 82 15 19 20 35 54 148 374 625 786 774 626 576 548 399 213 99 51 27 21 15 111]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_hist_270.0_07</Key>
+   <Description>RGS180_4: histogram of the differences between expected and measured position around270.0 pixels away from reference position</Description>
+   <StringValue>[ 96 11 18 28 30 77 156 327 570 757 778 702 582 527 414 219 101 59 29 21 12 104]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_hist_70.0_04</Key>
+   <Description>RGS180_4: histogram of the differences between expected and measured position around70.0 pixels away from reference position</Description>
+   <StringValue>[ 67 14 22 17 39 65 152 382 642 829 724 598 582 525 404 227 119 40 24 21 10 115]</StringValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_mean_-10.0_03</Key>
+   <Description>RGS180_4: clipped mean (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <DoubleValue>-0.0030083276797086</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_mean_-150.0_01</Key>
+   <Description>RGS180_4: clipped mean (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <DoubleValue>-0.0033586600329726934</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_mean_-210.0_00</Key>
+   <Description>RGS180_4: clipped mean (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <DoubleValue>-0.04992390051484108</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_mean_-70.0_02</Key>
+   <Description>RGS180_4: clipped mean (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <DoubleValue>-0.006628743838518858</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_mean_130.0_05</Key>
+   <Description>RGS180_4: clipped mean (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <DoubleValue>0.004668935667723417</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_mean_210.0_06</Key>
+   <Description>RGS180_4: clipped mean (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <DoubleValue>0.002412117086350918</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_mean_270.0_07</Key>
+   <Description>RGS180_4: clipped mean (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <DoubleValue>0.009338721632957458</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_mean_70.0_04</Key>
+   <Description>RGS180_4: clipped mean (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <DoubleValue>-0.001198168029077351</DoubleValue>
+   <Unit>pixels</Unit>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_std_-10.0_03</Key>
+   <Description>RGS180_4: clipped std (sigma=3.0) of differences between expected and measured position around -10.0 pixels away from reference position</Description>
+   <DoubleValue>0.28078633546829224</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_std_-150.0_01</Key>
+   <Description>RGS180_4: clipped std (sigma=3.0) of differences between expected and measured position around -150.0 pixels away from reference position</Description>
+   <DoubleValue>0.3004035949707031</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_std_-210.0_00</Key>
+   <Description>RGS180_4: clipped std (sigma=3.0) of differences between expected and measured position around -210.0 pixels away from reference position</Description>
+   <DoubleValue>0.3108792006969452</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_std_-70.0_02</Key>
+   <Description>RGS180_4: clipped std (sigma=3.0) of differences between expected and measured position around -70.0 pixels away from reference position</Description>
+   <DoubleValue>0.2872883379459381</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_std_130.0_05</Key>
+   <Description>RGS180_4: clipped std (sigma=3.0) of differences between expected and measured position around 130.0 pixels away from reference position</Description>
+   <DoubleValue>0.2686387896537781</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_std_210.0_06</Key>
+   <Description>RGS180_4: clipped std (sigma=3.0) of differences between expected and measured position around 210.0 pixels away from reference position</Description>
+   <DoubleValue>0.26759132742881775</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_std_270.0_07</Key>
+   <Description>RGS180_4: clipped std (sigma=3.0) of differences between expected and measured position around 270.0 pixels away from reference position</Description>
+   <DoubleValue>0.26970329880714417</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_4_std_70.0_04</Key>
+   <Description>RGS180_4: clipped std (sigma=3.0) of differences between expected and measured position around 70.0 pixels away from reference position</Description>
+   <DoubleValue>0.2713068425655365</DoubleValue>
+  </Parameter>
+ </Parameters>
+</dpd-sir-crvmodel:DpdSirCrvModel>

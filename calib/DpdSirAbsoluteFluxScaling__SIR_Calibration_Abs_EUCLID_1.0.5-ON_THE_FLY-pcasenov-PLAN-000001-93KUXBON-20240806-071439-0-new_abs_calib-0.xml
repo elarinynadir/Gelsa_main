@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dpd-sir-absoluteflux:DpdSirAbsoluteFluxScaling xmlns:dpd-sir-absoluteflux="http://ecdm.euclid-ec.org/schema/dpd/sir/absoluteflux" xmlns:sys="http://ecdm.euclid-ec.org/schema/sys" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:pro-sir="http://ecdm.euclid-ec.org/schema/pro/sir" xmlns:ins="http://ecdm.euclid-ec.org/schema/ins" xmlns:bas-fit="http://ecdm.euclid-ec.org/schema/bas/fit" xmlns:bas-dtd="http://ecdm.euclid-ec.org/schema/bas/dtd" xmlns:sys-dss="http://ecdm.euclid-ec.org/schema/sys/dss" xmlns:bas-ppr="http://ecdm.euclid-ec.org/schema/bas/ppr" xmlns:bas-dqc="http://ecdm.euclid-ec.org/schema/bas/dqc">
+ <Header>
+  <ProductId>SIR_Calibration_Abs_EUCLID_1.0.5-ON_THE_FLY-pcasenov-PLAN-000001-93KUXBON-20240806-071439-0-new_abs_calib-0</ProductId>
+  <ProductType>DpdSirAbsoluteFluxScaling</ProductType>
+  <SoftwareName>SIR_Calibration_Abs</SoftwareName>
+  <SoftwareRelease>4.6.2</SoftwareRelease>
+  <EuclidPipelineSoftwareRelease>0.0</EuclidPipelineSoftwareRelease>
+  <ProdSDC>SDC-IT-OPS</ProdSDC>
+  <DataSetRelease>CALBLOCK_PV-003_R3</DataSetRelease>
+  <Purpose>ON_THE_FLY</Purpose>
+  <PlanId>SIR_Calibration_Abs_EUCLID_1.0.5-ON_THE_FLY-pcasenov-PLAN-000001</PlanId>
+  <PPOId>SIR_Calibration_Abs_EUCLID_1.0.5-ON_THE_FLY-pcasenov-PLAN-000001-93KUXBON-20240806-071439-0</PPOId>
+  <PipelineDefinitionId>SIR_Calibration_Abs_EUCLID_1.0.5</PipelineDefinitionId>
+  <PpoStatus>COMPLETED</PpoStatus>
+  <ManualValidationStatus>VALID</ManualValidationStatus>
+  <ProductNotifiedToBeChecked>UNKNOWN</ProductNotifiedToBeChecked>
+  <AutomatedValidationStatus>UNKNOWN</AutomatedValidationStatus>
+  <ExpirationDate>2024-08-08T12:41:38.624000Z</ExpirationDate>
+  <ToBePublished>0</ToBePublished>
+  <Published>0</Published>
+  <Curator>Marco Fumana</Curator>
+  <CreationDate>2024-08-08T12:41:38.658000Z</CreationDate>
+ </Header>
+ <Data>
+  <ValidityRange>
+   <TimestampStart>2023-07-01T00:00:00.000000Z</TimestampStart>
+   <TimestampEnd>2030-12-31T23:59:59.000000Z</TimestampEnd>
+  </ValidityRange>
+  <CalibrationID>Test</CalibrationID>
+  <CalibrationVersion>1</CalibrationVersion>
+  <DataStorage format="sir.absoluteFluxScaling" version="0.1">
+   <DataContainer filestatus="PROPOSED" checksumMethod="MD5" checksumValue="6f45004360b618455a61885b3563328c">
+    <FileName>EUC_SIR_W-ABSOLUTEFLUX-SCALE_ALL_20240808T144138.619467Z.fits</FileName>
+   </DataContainer>
+  </DataStorage>
+ </Data>
+ <Parameters>
+  <Parameter>
+   <Key>RGS000_ratio_median</Key>
+   <Description>Median ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>1.07343371881293</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000_ratio_stdev</Key>
+   <Description>Standard deviation of the ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>0.01092241714267924</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000m4_ratio_median</Key>
+   <Description>Median ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>1.0582808966925858</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000m4_ratio_stdev</Key>
+   <Description>Standard deviation of the ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>0.015088264062430622</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000AV_ratio_median</Key>
+   <Description>Median ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>1.0656867825421057</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS000AV_ratio_stdev</Key>
+   <Description>Standard deviation of the ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>0.012670918556607303</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_ratio_median</Key>
+   <Description>Median ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>1.0789982337931823</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180_ratio_stdev</Key>
+   <Description>Standard deviation of the ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>0.015586128067673805</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180p4_ratio_median</Key>
+   <Description>Median ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>1.0639436477060247</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180p4_ratio_stdev</Key>
+   <Description>Standard deviation of the ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>0.016075311177629024</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180AV_ratio_median</Key>
+   <Description>Median ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>1.0719044915221385</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS180AV_ratio_stdev</Key>
+   <Description>Standard deviation of the ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>0.015359725644934192</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS_ratio_median</Key>
+   <Description>Median ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>1.068389488402494</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>RGS_ratio_stdev</Key>
+   <Description>Standard deviation of the ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>0.014003054102989014</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_ratio_median</Key>
+   <Description>Median ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>1.107545240723334</DoubleValue>
+  </Parameter>
+  <Parameter>
+   <Key>BGS000_ratio_stdev</Key>
+   <Description>Standard deviation of the ratio (computed sensitivity divided by forward-modeled sensitivity)</Description>
+   <DoubleValue>0.32730829116169535</DoubleValue>
+  </Parameter>
+ </Parameters>
+</dpd-sir-absoluteflux:DpdSirAbsoluteFluxScaling>
