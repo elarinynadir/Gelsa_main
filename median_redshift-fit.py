@@ -22,8 +22,9 @@ parent_dir = os.path.abspath(os.path.join(os.getcwd(), '..'))
 sys.path.append(parent_dir)
 
 import gelsa
-from gelsa import galaxy, specframe, spec_imager, optimize, shape_fit, overlaps, visu, opt_redshift
+from gelsa import galaxy, specframe, spec_imager, shape_fit, utils, visu, opt_redshift
 from gelsa.sgs import mer
+from gelsa.spec_crop import SpecCrop
 from gelsa.spec_crop import NoExtraction
 
 print(f"{gelsa.version.version=}")
@@ -31,6 +32,23 @@ print(f"{gelsa.version.version=}")
 
 #wrong estimation:0, 2,3, 4 6,8,9, 13, 16 18,19,21, 25, 26(negative), 29 , 31(negative), 33
 
+
+def crop_trace(image, mask, var ,frame, detector, x, y, padx=100, pady=10):
+        """ """
+        nrow, ncol = image.shape
+
+        x_0 = max(0, int(x.min() - padx))
+        x_1 = min(ncol, int(x.max() + padx))
+        y_0 = max(0, int(y.min() - pady))
+        y_1 = min(nrow, int(y.max() + pady))
+
+        bbox = (x_0, x_1, y_0, y_1)
+
+        image = image[y_0:y_1, x_0:x_1]
+        mask = mask[y_0:y_1, x_0:x_1]
+        var = var[y_0:y_1, x_0:x_1]
+        return SpecCrop(image, mask, var,
+                        detector=detector, bbox=bbox, frame=frame)
 
 
 def process_galaxy(gal_index, cat, M, G, sir_pack):
@@ -69,7 +87,7 @@ def process_galaxy(gal_index, cat, M, G, sir_pack):
         frame_list.append(S)
         #frame_list_copy.append(S)
 
-    #frame_list = [frame_list_copy[0], frame_list_copy[1], frame_list_copy[2], frame_list_copy[3],frame_list_copy[4], frame_list_copy[5],frame_list_copy[6],frame_list_copy[7]]
+    #frame_list = [frame_list_copy[0], frame_list_copy[1], frame_list_copy[2], frame_list_copy[3], frame_list_copy[4], frame_list_copy[5],frame_list_copy[6],frame_list_copy[7], frame_list_copy[8], frame_list_copy[9],frame_list_copy[10],frame_list_copy[11]]
 
     # Shape fitting
     final_image, Target_Galaxy = shape_fit.gal_shape_fit(
@@ -77,53 +95,13 @@ def process_galaxy(gal_index, cat, M, G, sir_pack):
     )
 
     # Extract cutouts
-    pack_list = []
     pack_original_list = []
     for frame in frame_list:
         if frame is None:
-            pack_list.append(None)
             pack_original_list.append(None)
 
         else:
-            pack_list.append(frame.specframe.cutout(ra, dec, redshift))
             pack_original_list.append(frame.specframe.cutout(ra, dec, redshift))
-
-    
-
-    filter_size = 40
-    for index, pack in enumerate(pack_list):
-        if pack is None:
-            continue
-        for det in pack.keys():
-            crop = pack[det]
-            image = crop.copy()
-            try:
-                tilt = frame_list[index].specframe.params["tilt"]
-                if tilt == 0 or tilt == 180:
-                    image.image = image.image.astype(np.float64)
-                    filtered_crop_data = np.apply_along_axis(median_filter, axis=1, arr=image.image, size=filter_size)
-                    crop.image = image.image - filtered_crop_data
-                else:
-                    rotated_image = rotate(image.image, +tilt, reshape=False, order=3, mode='constant', cval=0)
-                    rotated_image = rotated_image.astype(np.float64)
-
-                    frac_nans = np.isnan(rotated_image).sum() / rotated_image.size
-                    if frac_nans > 0.5:
-                        rotated_image = rotate(image.image, +tilt, reshape=False, order=1, mode='constant', cval=0)
-                        rotated_image = rotated_image.astype(np.float64)
-
-                    filtered_rotated_image = np.apply_along_axis(median_filter, axis=1, arr=rotated_image, size=filter_size)
-                    rotated_back_image = rotate(filtered_rotated_image, -tilt, reshape=False, order=3, mode='constant', cval=0)
-                    rotated_back_image = rotated_back_image.astype(np.float64)
-
-                    frac_nans = np.isnan(rotated_back_image).sum() / rotated_back_image.size
-                    if frac_nans > 0.5:
-                        rotated_back_image = rotate(filtered_rotated_image, -tilt, reshape=False, order=1, mode='constant', cval=0)
-                        rotated_back_image = rotated_back_image.astype(np.float64)
-
-                    crop.image = image.image - rotated_back_image
-            except NoExtraction:
-                continue
 
     mask_list = []
     for frame in frame_list:
@@ -134,7 +112,7 @@ def process_galaxy(gal_index, cat, M, G, sir_pack):
             print(mask_list[-1].keys())
 
     filter_size = 50
-    image_list, pixmask_list, var_list, tilt_list = [], [], [], []
+    image_list, pixmask_list, original_mask_list, var_list, tilt_list = [], [], [], [], []
     for i, S in enumerate(frame_list):
         if S is None:
             image_list.append(None)
@@ -142,13 +120,15 @@ def process_galaxy(gal_index, cat, M, G, sir_pack):
             var_list.append(None)
             tilt_list.append(None)
         else:
-            image, pixmask, var = {}, {}, {}
+            image, pixmask, original_mask, var = {}, {}, {}, {}
+            tilt = S.specframe.params['tilt']
+
             for d in mask_list[i]:
                 im, pm, v = S.specframe.get_detector(d)
                 image[d] = im.astype(np.float64)
                 pixmask[d] = pm
+                original_mask[d] = pm
                 var[d] = v
-                tilt = S.specframe.params['tilt']
                 if tilt not in [0, 180]:
                     filtered_image = np.apply_along_axis(median_filter, axis=1, arr=image[d], size=filter_size)
                     image[d] -= filtered_image
@@ -173,9 +153,50 @@ def process_galaxy(gal_index, cat, M, G, sir_pack):
                     pixmask[d][valid] = 1
             image_list.append(image)
             pixmask_list.append(pixmask)
+            original_mask_list.append(original_mask)
             var_list.append(var)
             tilt_list.append(tilt)
 
+
+    pack_list = []
+
+    for i, frame in enumerate(frame_list):
+        if frame is None:
+            pack_list.append(None)
+
+        else:
+            wavelength_range = frame.specframe.params['wavelength_range']
+            wave_trace = utils.intrange(*wavelength_range, 20)
+            n = len(wave_trace)
+
+            detx, dety, detid = frame.specframe.radec_to_pixel(
+                ra*np.ones(n),
+                dec*np.ones(n),
+                wave_trace
+            )
+            valid = detid >= 0
+            if np.sum(valid) == 0:
+                #raise ValueError(f"RA, Dec  not on detector {(ra, dec)}")
+                print(f"RA, Dec  not on detector {(ra, dec)}")
+                pack_list.append(None)
+            detx = detx[valid]
+            dety = dety[valid]
+            detid = detid[valid]
+            wave_trace = wave_trace[valid]
+
+            pack_dict = {}
+            for det in np.unique(detid):
+                sel = detid == det
+                detx_ = detx[sel]
+                dety_ = dety[sel]
+                crop = crop_trace(image_list[i][det], original_mask_list[i][det], var_list[i][det], frame.specframe, det, detx_, dety_)
+                crop.center = (ra, dec)
+                crop.wavelength_trace = wave_trace[sel]
+                crop.redshift = redshift
+                pack_dict[det] = crop
+            pack_list.append(pack_dict)
+
+        
     redshift_grid = np.arange(0.9, 1.8, 4.5e-3)
 
     wave_list, pz_list, new_pz_list, new_redshifts_list, measured_redshift_list = [], [], [], [], []
