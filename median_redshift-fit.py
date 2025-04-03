@@ -116,12 +116,13 @@ def process_galaxy(gal_index, cat, M, G, sir_pack):
     for i, S in enumerate(frame_list):
         if S is None:
             image_list.append(None)
+            original_mask_list.append(None)
             pixmask_list.append(None)
             var_list.append(None)
             tilt_list.append(None)
         else:
             image, pixmask, original_mask, var = {}, {}, {}, {}
-            tilt = S.specframe.params['tilt']
+            tilt = S.specframe.params["tilt"]
 
             for d in mask_list[i]:
                 im, pm, v = S.specframe.get_detector(d)
